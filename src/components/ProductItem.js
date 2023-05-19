@@ -16,8 +16,8 @@ const ProductItem = (props) => {
           <p>{prod.category}</p>
           <p>{prod.price}$</p>
           <div className={classes.btn}>
-            <button className={classes.bel}>View details</button>
-            <button className={classes.bel}>Edit</button>
+            <button className={classes.bel} onClick={() => {navigate(`/product/${prod.id}`)}}>View details</button>
+            <button className={classes.bel}  onClick={() => {navigate(`/product/edit/${prod.id}`)}}>Edit</button>
             <button className={classes.bel}>Delete</button>
           </div>
         </div>
